@@ -47,7 +47,7 @@ jobs:
               uses: actions/setup-node@v1
 
             - name: Install dependencies
-              run: npm install
+              run: yarn
 
             - name: Get Epic Freebies
-              run: npm run start ${{ secrets.USERNAME2 }} ${{ secrets.GPASSWORD }} 0 ${{ secrets.SECRETKEY2 }}
+              run: yarn start ${{ secrets.USERNAME2 }} ${{ secrets.GPASSWORD }} 0 ${{ secrets.SECRETKEY2 }}
