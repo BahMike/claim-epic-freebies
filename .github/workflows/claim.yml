@@ -21,7 +21,7 @@ jobs:
             - name: Setup repo
               uses: actions/checkout@v2
               with:
-                  repository: "JourneyGActions/epicgames-freebies-claimer"
+                  repository: "BahMike/epicgames-freebies-claimer"
 
             - name: Setup Node.js
               uses: actions/setup-node@v1
@@ -41,7 +41,7 @@ jobs:
             - name: Setup repo
               uses: actions/checkout@v2
               with:
-                  repository: "JourneyGActions/epicgames-freebies-claimer"
+                  repository: "BahMike/epicgames-freebies-claimer"
 
             - name: Setup Node.js
               uses: actions/setup-node@v1
