@@ -27,10 +27,10 @@ jobs:
               uses: actions/setup-node@v1
 
             - name: Install dependencies
-              run: npm install
+              run: yarn
 
             - name: Get Epic Freebies
-              run: npm run start ${{ secrets.USERNAME1 }} ${{ secrets.GPASSWORD }} 0 ${{ secrets.SECRETKEY1 }}
+              run: yarn start ${{ secrets.USERNAME1 }} ${{ secrets.GPASSWORD }} 0 ${{ secrets.SECRETKEY1 }}
 
     claim2:
         runs-on: ubuntu-latest
