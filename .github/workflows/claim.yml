@@ -30,7 +30,7 @@ jobs:
               run: yarn
 
             - name: Get Epic Freebies
-              run: yarn start ${{ secrets.USERNAME1 }} ${{ secrets.GPASSWORD }} 0 ${{ secrets.SECRETKEY }}
+              run: yarn start ${{ secrets.USERNAME1 }} ${{ secrets.GPASSWORD }} 0 ${{ secrets.SECRETKEY1 }}
 
     claim2:
         runs-on: ubuntu-latest
@@ -50,4 +50,4 @@ jobs:
               run: yarn
 
             - name: Get Epic Freebies
-              run: yarn start ${{ secrets.USERNAME2 }} ${{ secrets.GPASSWORD }} 0 ${{ secrets.SECRETKEY }}
+              run: yarn start ${{ secrets.USERNAME2 }} ${{ secrets.GPASSWORD }} 0 ${{ secrets.SECRETKEY2 }}
