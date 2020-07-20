@@ -28,7 +28,10 @@ jobs:
 
             - name: Install dependencies
               run: yarn
-
+            
+            - name: Fix Epicgames Client Bug
+              run: mkdir -p .egstore
+            
             - name: Get Epic Freebies
               run: yarn start ${{ secrets.USERNAME1 }} ${{ secrets.GPASSWORD }} 0 ${{ secrets.SECRETKEY1 }}
 
@@ -48,6 +51,9 @@ jobs:
 
             - name: Install dependencies
               run: yarn
+
+            - name: Fix Epicgames Client Bug
+              run: mkdir -p .egstore
 
             - name: Get Epic Freebies
               run: yarn start ${{ secrets.USERNAME2 }} ${{ secrets.GPASSWORD }} 0 ${{ secrets.SECRETKEY2 }}
